@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+   
+</head>
+<body>
+    <div class="general-container">
+        <div class="header">
+            <span class="header-span">MY WEATHER</span>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput">
+                <button for="searchLabel" class="search-icon" id="searchBtn">
+                    <img src="img/search-interface-symbol.png" alt="search" height="10px">
+                </button>
+            </div>
+            
+        </div>
+        <div class="menu">
+            <button class="btn today-btn" id="todayBtn">Today</button>
+            <button class="btn five-days-btn" id="daysBtn">5-day forecast</button>
+        </div>
+
+        
+        <div class="content-container">
+            <div class="error-container" id="errorContainer">
+                <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-1932.jpg?w=2000" alt="404 Page Not Found" height="300px">
+                <p class="error-p" id="errorP">Qwerty could not be found.<br>Please enter a different location.</p>
+            </div>
+
+            <div id="allContent">
+                <div class="current-wheather" id="currentWeather">
+                    <div class="header-curent">
+                        <span class="text-currnet">CURRENT WEATHER</span>
+                        <span class="current-date"  id="currentDate"></span>
+                    </div>
+    
+                    <div class="current-wheather-display">
+                        <div class="current-wheather-icon">
+                            <img id="icon-current" src="" alt="Weather Icon" height="100px">
+                            <span id="wheather-span"></span>
+                        </div>
+                        <div class="current-temperature">
+                            <span class="temp-current" id="tempCurrent"></span>
+                            <span class="real-feel-current" id="realFeelCurrent">Real Feel </span>
+                        </div>
+                        <div class="current-time">
+                            <span id="sunrise">Sunrise: </span>
+                            <span id="sunset">Sunset: </span>
+                            <span id="duration">Duration: </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hourly-weather-container" id="hourlyWeather">
+                    <span>HOURLY</span>
+                    <div class="hourly-weather-display">
+                        <div class="info-description">
+                            <span>TODAY</span>
+                            <span>Forecast</span>
+                            <span>Temp (&#176;C)</span>
+                            <span>Real Feel</span>
+                            <span>Wind (km/h)</span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                        <div class="hourly-weather">
+                            <span id="timeSpan"></span>
+                            <img id="img" src="" alt="Weather Icon" height="40px">
+                            <span id="weatherSpan"></span>
+                            <span id="tempSpan"></span>
+                            <span id="feelSpan"></span>
+                            <span id="windSpan"></span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="five-days-container" id="fiveDaysContainer">
+                        <button id="dayButton" class="day-btn">
+                            <p id="dayWeek">Tonight</p>
+                            <p class="day">JUN 30</p>
+                            <img id="imgIcon" height="90px" src="" alt="Weather Icon">
+                            <p class="temp">25*C</p>
+                            <p class="wth">Clear, Warm</p>
+                        </button>
+                        <button id="dayButton" class="day-btn">
+                            <p id="dayWeek">Tonight</p>
+                            <p class="day">JUN 30</p>
+                            <img id="imgIcon" height="90px" src="https://cdn-icons-png.flaticon.com/512/1400/1400310.png" alt="">
+                            <p class="temp">25*C</p>
+                            <p class="wth">Clear, Warm</p>
+                        </button>
+                        <button id="dayButton" class="day-btn">
+                            <p id="dayWeek">Tonight</p>
+                            <p class="day">JUN 30</p>
+                            <img id="imgIcon" height="90px" src="https://cdn-icons-png.flaticon.com/512/1400/1400310.png" alt="">
+                            <p class="temp">25*C</p>
+                            <p class="wth">Clear, Warm</p>
+                        </button>
+                        <button id="dayButton" class="day-btn">
+                            <p id="dayWeek">Tonight</p>
+                            <p class="day">JUN 30</p>
+                            <img id="imgIcon" height="90px" src="https://cdn-icons-png.flaticon.com/512/1400/1400310.png" alt="">
+                            <p class="temp">25*C</p>
+                            <p class="wth">Clear, Warm</p>
+                        </button>
+                        <button id="dayButton" class="day-btn">
+                            <p id="dayWeek">Tonight</p>
+                            <p class="day">JUN 30</p>
+                            <img id="imgIcon" height="90px" src="https://cdn-icons-png.flaticon.com/512/1400/1400310.png" alt="">
+                            <p class="temp">25*C</p>
+                            <p class="wth">Clear, Warm</p>
+                        </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

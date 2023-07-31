@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.general-container{
+    min-height: 100%;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    padding-top: 10px;
+}
+
+.header-span{
+    color:darkturquoise;
+    font-size: 20px;
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.search-container{
+    display: inline;
+    float: right;
+    position: relative;
+    margin-right: 10px;
+}
+
+.search-input{
+    padding: 5px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    padding-right: 40px;
+}
+
+.search-icon{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.search-icon:hover{
+    border: 1.5px solid #ccc;
+}
+
+.menu{
+    background-color:dimgray;
+    height: 30px;
+    padding-left: 90px;
+}
+
+.btn{
+    
+    background-color: dimgray;
+    display: inline-block;
+    height: 95%;
+    padding: 2px;
+    border: 1px solid dimgray;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-container{
+    position:relative;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.today-btn{
+    border-bottom: 2px solid darkblue;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+
+.current-wheather{
+    background-color: white;
+    margin-top: 25px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    width: 100%;
+    padding-top: 10px;
+}
+
+.text-currnet{
+    font-size: 13px;
+    margin: 20px;
+    color: darkturquoise;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.current-date{
+    font-size: 13px;
+    margin-right: 20px;
+    float: right;
+    color: darkturquoise;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.current-wheather-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    height: 170px;
+}
+
+.current-wheather-icon{
+    margin-left: 70px;
+    width: 100px;
+    text-align: center;
+}
+
+.current-wheather-icon>img{
+    margin-top: 10px;
+}
+
+.current-wheather-icon>span{
+    display: block;
+    margin-top: 10px;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-weight: 10;
+}
+
+.current-temperature{
+    margin-top: 20px;
+    margin-left: 55px;
+    width: 100px;
+    height: 100px;
+}
+
+.current-temperature>span{
+    display: block;
+    text-align: center;
+}
+
+.current-temperature>.temp-current{
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.current-temperature>.real-feel-current{
+    font-size: 13px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.current-time{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.current-time>span{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.hourly-weather-container{
+    background-color: white;
+    margin-top: 25px;
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    width: 100%;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.hourly-weather-container>span:first-child{
+    font-size: 13px;
+    margin: 20px;
+    color: darkturquoise;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hourly-weather-display{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.info-description{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    width: 100px;
+}
+
+.info-description>span:first-child{
+    font-weight: 700;
+    display: block;
+    color:dimgrey;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+   
+}
+
+.info-description>span:nth-child(n+2)
+{
+    width: 50px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 70px;
+    color: darkgrey;
+    font-weight: 10;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.hourly-weather{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.hourly-weather>img{
+    margin-bottom: 16px;
+}
+
+.hourly-weather>span:nth-child(n+2){
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hourly-weather>span:first-child{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.error-container{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding-top: 10px;
+    visibility:hidden;
+    position:absolute;
+}
+
+.error-p{
+    color:cornflowerblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.five-days-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    background-color: #ccc;
+    top: 0px;
+}
+
+.five-days-container>button>p:first-child{
+    color: darkturquoise;
+    margin-bottom: -5px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.day{
+    color: darkgray;
+    margin-bottom: -10px;
+}
+
+.temp{
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+
+.wth{
+    color: darkgray;
+}
+
+.day-btn{
+    margin: 1px;
+    border: 0;
+    border-radius: 3px;
+    background-color:white;
+}
+
+.selected{
+    margin: 1px;
+    border: 0;
+    border-radius: 3px;
+    background-color:white;
+    border:2px solid dimgray;
+}
